@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>They Were Roommates</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #8e2121;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Token Generator */
+        .token-generator {
+            margin-top: 20px;
+        }
+
+        .token-generator button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #0078d7;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .token-generator button:hover {
+            background-color: #005bb5;
+        }
+
+        .token-generator p {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>They Were Roommates!</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <img src="./image/image1.png" alt="Roommates Meme 1">
+            <img src="./image/image2.png" alt="Roommates Meme 2">
+            <img src="./image/image3.png" alt="Roommates Meme 3">
+        </div>
+        <div class="token-generator">
+            <h2>$TWR Token</h2>
+            <button onclick="generateToken()">Generate Token</button>
+            <p id="token-output"></p>
+        </div>
+    </main>
+    <footer>
+        <p>CA: </p>
+    </footer>
+</body>
+</html>
